@@ -1,19 +1,92 @@
 #container{
-    width: 100%;
-    height: 40px;
-    background-color: lightblue;
-    border: 1px solid blue;
-    margin-top: 20px;
+    width: 60%;
+    height: 430px;
+    border: 1px solid black;
+    margin: auto;
    
 }
-.body{
-    text-align: center;
-    justify-content: center;
+#box1{
     display: flex;
-    color: rgb(31, 31, 31);
+    justify-content: space-between;
 }
+#box2{
+    display: flex;
+    width: 100%;
+    margin-left: 25px;
+}
+#subdiv1{
+    width: 50%;
+    height: 300px;
+}
+#subdiv1 > button{
+    width: 360px;
+    height: 35px;
+    border: 0.5px solid rgb(31, 29, 29);
+    border-radius: 10px;
+    color: #4d7485;
+    font-weight: bold;
 
-
-.btn1:before {
-    background-image: url(https://m.media-amazon.com/images/G/01/zappos/melody/melody-sprite.2021.09.16._TTH_.svg);
+}
+#subdiv1 > h3{
+    margin-top: 0px;
+}
+#subdiv1 > button:last-child{
+    margin-top: -100;
+}
+#subdiv2{
+    width: 50%;
+    margin-left: -30px;
+    /* border: 1px solid red; */
+}
+#close{
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#box1 > h2{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.par1{
+   margin-top:-18px; 
+   text-decoration: underline;
+   color: rgb(88, 190, 224);
+   cursor: pointer;
+   
+}
+#par{
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+#subdiv1 > p {
+    margin-bottom: 70px;
+    margin-left: 50px;
+}
+#amazon{
+    width: 82%;
+    font-size: 19px;
+    font-weight: bold;
+    margin: auto;
+    line-height: 25px;
+}
+#code{
+    width: 82%;
+    line-height: 28px;
+    color: grey;
+}
+#line{
+    border: 0.1px solid grey;
+    margin-bottom: 15px;
+}
+#subdiv1 > button:hover{
+    cursor: pointer;
+    background-color: #0076bd;
+    color: white;
+}
+#image1{
+    width: 13%;
+    height: 22px;
+    margin-left: -70px;
 }
