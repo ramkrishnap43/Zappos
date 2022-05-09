@@ -5,22 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+
+    <style>
+
+        .box{
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+        }
+        span{
+            color: red;
+        }
+
+    </style>
 </head>
 <body>
-    <div id="container">
-        <div class="body">
-            <h4>Be the first to shop the newest home styles now on Zappos!</h4>
-            <h4>Shop Home Now</h4>
-        </div>
-        <div class="body">
-            <h4>Mother's Day is this Sunday! </h4>
-            <h4>Shop Mother's Day Gifts</h4>
-        </div>
-        <div class="body">
-            <h4>FREE 365 Day Returns and Exchanges! </h4>
-        </div>
-    </div>
-    <button type="button" class="btn1"></button>
+    
+    <div class="box">
+        Dear customer,  Your OTP is <span id="otp"></span>
+    </div><br>
+
+    <button type="button" onclick="generate()">Generate OTP</button>
+
+
 </body>
 </html>
+
+<script>
+
+    function generate(){
+        let num = "0123456789"
+        let OTP = "";
+
+        for(let i=0; i<4; i++){
+
+            OTP +=num[Math.floor(Math.random() * 10)];
+
+        }
+
+        document.getElementById("otp").innerHTML = OTP
+
+
+    }
+
+
+
+
+</script>
